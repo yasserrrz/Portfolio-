@@ -1,0 +1,16 @@
+import React from 'react'
+import './contactUs.css'
+
+export default function ContactUs() {
+  return (
+   <>
+      
+       
+        <section id='contact'>
+             <h5>Get In Touch</h5>
+             <h2></h2>
+        </section>
+   
+   </>
+  )
+}

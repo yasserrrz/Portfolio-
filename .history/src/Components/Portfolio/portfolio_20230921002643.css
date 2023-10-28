@@ -1,0 +1,14 @@
+
+
+.project{
+    border: 1.5px solid #0dcaf0;
+    background-color:#303844;
+    position: relative;
+    z-index: 2;
+}
+.project .card-text p{
+    margin-top: 1.5rem;
+    /* height: 150px; */
+    font-size: 0.8rem;
+    color: ;
+}

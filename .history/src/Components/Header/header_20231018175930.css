@@ -1,0 +1,40 @@
+header{
+    height: 100vh;
+    padding-top: 7rem;
+    /* overflow: hidden; */
+}
+
+/* header socials */
+.header_socials::after{
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background-color: var( --color-primary);
+}
+
+.me{
+
+    display: inline-block;
+    background: linear-gradient(var( --color-primary), transparent );
+    width: 20rem;
+    position: absolute;
+    left: calc(50% - 10rem);
+    margin-top: 4rem;
+    border-radius: 12rem 12rem 0 0;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.cvBtn{
+    background: linear-gradient(45deg, #0059ff, #0026ff, #36b5ff, #008cff, #006eff, #010347, #5900ff, #4400ff, #0400ff);
+    /* position: absolute;
+    top: -2px;
+    left:-2px; */
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    /* opacity: 0; */
+    transition: opacity .3s ease-in-out;
+}

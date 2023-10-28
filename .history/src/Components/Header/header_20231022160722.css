@@ -1,0 +1,104 @@
+header{
+    height: 100vh;
+    padding-top: 7rem;
+    /* overflow: hidden; */
+}
+
+/* header socials */
+.header_socials::after{
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background-color: var( --color-primary);
+}
+
+.me{
+
+    display: inline-block;
+    background: linear-gradient(var( --color-primary), transparent );
+    width: 20rem;
+    position: absolute;
+    left: calc(50% - 10rem);
+    margin-top: 4rem;
+    border-radius: 12rem 12rem 0 0;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.cvBtn{
+    background: linear-gradient(45deg, #0059ff, #0026ff, #36b5ff, #008cff, #006eff, #010347, #5900ff, #4400ff, #0400ff);
+    
+}
+
+.download_cv{
+    font-size: 1rem;
+}
+
+@media screen and (max-width:700px) {
+    .download_cv{
+        font-size: 0.8rem;
+    }
+}
+
+
+.button {
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: var(--color-bg); /* Use the --color-bg variable for the background color */
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff5733, #ff33b8, #ff55c9, #ff3347, #ffb833, #330147, #ff3366, #ff3333, #ff77a7);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.button:active {
+    color: #333; /* Change text color on click */
+}
+
+.button:active:after {
+    background: transparent;
+}
+
+.button:hover:before {
+    opacity: 1;
+}
+
+.button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #030e50; /* Change the background color on hover */
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}

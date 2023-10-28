@@ -1,0 +1,153 @@
+
+.contact_option{
+    background-color: var(--color-bg-variant);
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    transition: var(--transition);
+    border: 1px solid transparent;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact_option:hover{
+    background-color: transparent;
+    border-color: var(--color-primary-variant);
+}
+.contact_option_icon{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.contact_option a {
+    font-size: 0.8rem;
+    margin-top: 0.7rem;
+    display: inline-block;
+    text-decoration: none;
+    
+}
+.contact_option h5{
+    font-size: 1rem;
+}
+
+
+/*========================== form============================ */
+
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    background-color: rgba(0, 0, 0, 0.774) !important; /* Set it to your desired background color */
+    color: var(--color-white) !important;
+    -webkit-box-shadow: 0 0 0 200px rgba(7, 8, 10, 0.767) inset !important;
+    
+}
+
+input:-webkit-autofill {
+    background-color: rgba(4, 20, 66, 0.774) !important; /* Background color */
+    color: var(--color-white) !important; /* Text color */
+  }
+
+input, textarea{
+width: 100%;
+padding: 1.5rem;
+border-radius:0.5rem ;
+background-color: rgba(4, 20, 66, 0.774),;
+background:  radial-gradient(rgba(4, 20, 66, 0.774), rgb(0, 0, 0));;
+resize: none !important;
+border: 2px solid var(--color-primary-variant);
+color: var(--color-white);
+transition: var(--transition);
+}
+
+input:focus, textarea:focus {
+background:  radial-gradient(rgba(4, 20, 66, 0.774), rgb(10, 1, 43));;
+box-shadow: 0 0 15px 1px #6db3fd;
+border-color: #6db3fd; /* Change the border color on focus */
+
+}
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: var(--color-primary-variant);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #0059ff, #0026ff, #36b5ff, #008cff, #006eff, #010347, #5900ff, #4400ff, #0400ff);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #ffffff
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 81, 255);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.btn_animation{
+    background: linear-gradient(45deg, #0059ff, #0026ff, #36b5ff, #008cff, #006eff, #010347, #5900ff, #4400ff, #0400ff);
+    
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+@media screen and (max-width:1168px) {
+    .contact_option h5{
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width:981px) {
+    .contact_option h5{
+        /* text-align: center; */
+        font-size: 0.65rem;
+    }
+}
+@media screen and (max-width:767px) {
+    .contact_option h5{
+        font-size: 0.9rem;
+    }
+}

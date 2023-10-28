@@ -1,0 +1,10 @@
+
+.contact_option{
+    background-color: var(--color-bg-variant);
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    transition: var(--transition);
+    border: 1px solid transparent;
+}
+
+.contact_option:

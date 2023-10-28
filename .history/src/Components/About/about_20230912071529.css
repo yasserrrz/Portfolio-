@@ -1,0 +1,52 @@
+
+
+
+
+.about_me{
+    width: 100%;
+    aspect-ratio: 1/1;
+    background: linear-gradient(45deg , transparent , var(--color-primary,
+    transparent));
+    border-radius: 2rem;
+    display: grid;
+    place-items: center;
+}
+.about_me_image{
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition: var(--transition);
+}
+.about_me_image:hover{
+transform: rotate(0);
+}
+
+.about_cards{
+    background:var( --color-primary-variant) ;
+    border:1px solid transparent ;
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: var(--transition);
+}
+.about_cards:hover{
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+.about_icon{
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+
+}
+.about_cards h5{
+    font-size: 0.95rem;
+}
+
+.about_cards small{
+    font-size: 0.7rem;
+    color: var(--color-light) ;
+
+}
+
+.a

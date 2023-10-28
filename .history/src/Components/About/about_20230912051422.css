@@ -1,0 +1,16 @@
+
+
+
+
+.about_me{
+    width: 100%;
+    aspect-ratio: 1/1;
+    background: linear-gradient(45deg , transparent , var(--color-primary,
+    transparent));
+    border-radius: 2rem;
+    display: grid;
+    place-items: center;
+}
+.about_me_image{
+    border-radius: 2;
+}

@@ -1,0 +1,68 @@
+
+.contact_option{
+    background-color: var(--color-bg-variant);
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    transition: var(--transition);
+    border: 1px solid transparent;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact_option:hover{
+    background-color: transparent;
+    border-color: var(--color-primary-variant);
+}
+.contact_option_icon{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.contact_option a {
+    font-size: 0.8rem;
+    margin-top: 0.7rem;
+    display: inline-block;
+    text-decoration: none;
+    
+}
+.contact_option h5{
+    font-size: 1rem;
+}
+
+
+/*========================== form============================ */
+
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    background-color: rgba(0, 0, 0, 0.774) !important; /* Set it to your desired background color */
+    color: var(--color-white) !important;
+    -webkit-box-shadow: 0 0 0 200px rgba(7, 8, 10, 0.767) inset !important;
+    
+}
+
+input:-webkit-autofill {
+    background-color: rgba(4, 20, 66, 0.774) !important; /* Background color */
+    color: var(--color-white) !important; /* Text color */
+  }
+
+input, textarea{
+width: 100%;
+padding: 1.5rem;
+border-radius:0.5rem ;
+background-color: rgba(4, 20, 66, 0.774),;
+background:  radial-gradient(rgba(4, 20, 66, 0.774), rgb(0, 0, 0));;
+resize: none !important;
+border: 2px solid var(--color-primary-variant);
+color: var(--color-white);
+transition: var(--transition);
+}
+
+input:focus, textarea:focus {
+background:  radial-gradient(rgba(4, 20, 66, 0.774), rgb(10, 1, 43));;
+
+}
+@media screen and  {
+    
+}

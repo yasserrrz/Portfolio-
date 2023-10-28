@@ -1,0 +1,22 @@
+
+
+.project{
+    border: 1.5px solid #0dcaf0;
+    background-color:#303844;
+    position: relative;
+    z-index: 2;
+}
+.card-heder {
+    font-size: 1.2rem;
+}
+.card-heder h6{
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.project .card-text p{
+    margin-top: 1.5rem;
+    /* height: 150px; */
+    font-size: 0.8rem;
+    color: #b8b8b8;
+}
+.layer

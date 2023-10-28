@@ -1,0 +1,9 @@
+
+
+.project{
+    border: 1.5px solid #0dcaf0;
+    background-color:#303844;
+}
+.project .card-text p{
+    height: 150px;
+}
