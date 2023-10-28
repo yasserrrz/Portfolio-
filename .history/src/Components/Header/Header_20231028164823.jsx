@@ -1,3 +1,4 @@
+// import  { useCallback } from "react";
 import "./header.css";
 import CTA from "./CTA.jsx";
 import Me from "../../assets/yasserNo-bg.png";
@@ -5,6 +6,7 @@ import { Link } from "react-router-dom";
 import HeaderSocials from "./HeaderSocials";
 import 'animate.css/animate.min.css';
 import Typewriter from "./Typewriter";
+
 
 export default function Header() {
 
