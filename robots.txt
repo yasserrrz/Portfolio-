@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yasserrsportfolio.vercel.app/sitemap.xml
