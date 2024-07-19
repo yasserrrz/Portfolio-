@@ -25,6 +25,9 @@ import Typscript from '../../assets/icons8-typescript.svg'
 import vs from '../../assets/icons8-vs-code (1).svg'
 import vsCode from '../../assets/icons8-vs-code.svg'
 import Bootstrap from '../../assets/icons8-bootstrap.svg'
+import mongoDb from '../../assets/mongodb-original.svg'
+import Tailwind from '../../assets/tailwind-css.svg'
+import Nodejs from '../../assets/nodejs.svg'
 import {BsFillCloudArrowUpFill} from'react-icons/bs'
 
 export default function About() {
@@ -79,6 +82,32 @@ export default function About() {
       src:Typscript,
       isDone:true,
     },
+   
+    {
+      name:"Next.js",
+      src:nextjs,
+      isDone:true,
+    },
+    {
+      name:"MongoDB",
+      src:mongoDb,
+      isDone:true,
+    },
+    {
+      name:"Tailwind",
+      src:Tailwind,
+      isDone:true,
+    },
+    {
+      name:"Node.js",
+      src:Nodejs,
+      isDone:true,
+    },
+    {
+      name:"MySql",
+      src:Mysql,
+      isDone:true,
+    },
     {
       name:"C#",
       src:cSharp,
@@ -88,17 +117,6 @@ export default function About() {
     {
       name:".Net",
       src:dotnet,
-      isDone:false,
-    },
-    {
-      name:"Next.js",
-      src:nextjs,
-      isDone:false,
-    },
-  
-    {
-      name:"MySql",
-      src:Mysql,
       isDone:false,
     },
     
@@ -187,7 +205,7 @@ export default function About() {
             <p >
               I am Yasser Mohamed, a dedicated Frontend Web Developer with over 2
               years of hands-on experience in crafting exceptional user
-              interfaces using React.js. My journey in web development has been
+              interfaces using React.js|Next.js. My journey in web development has been
               driven by a passion for creating seamless and visually appealing
               web experiences.
             </p>
@@ -296,6 +314,27 @@ export default function About() {
                   translating design mock-ups into functional web pages. Stayed
                   updated with the latest front-end development trends.
                 </p>
+                  <h6 className="px-3">Back-End Development Diploma,At Route Academy Aug 2023
+                    – Jan 2024 Cairo,Egypt</h6>
+                  <p className="px-2 px-md-5">
+                  Intensive training in Node.js, Express.js, MongoDB, SQL,
+                  and RESTful APIs. Specialized in building server-side
+                  applications using Node.js and Express.js, proficient in
+                  handling database operations using MongoDB and SQL.
+                  Experienced in creating RESTful APIs and handling HTTP
+                  requests and responses. Stayed updated with the latest
+                  back-end development trends.
+                  </p>
+                  <h6 className="px-3">Freelance Web Developer - Working as a freelancer on web development</h6>
+                  <p className="px-2 px-md-5">
+                  Currently offering my services as a freelance web developer,
+                  specializing in frontend development and full stack web
+                  development. Proficient in HTML, CSS, JavaScript, React.js,
+                  Node.js, Express.js, MongoDB, and SQL. Capable of
+                  collaborating with clients to understand their requirements
+                  and deliver high-quality web solutions.
+                  </p>
+
               </div>
               <div
                 className={activeTab === "Section3" ? "d-block " : "d-none"}
@@ -321,6 +360,12 @@ export default function About() {
                         <BsFillCloudArrowUpFill/>
                         </a>
                    </li>
+                   <li  className="my-2">
+                        <a className="text-decoration-none"  target={`_blank`}>
+                        Backend Development Diploma 
+                        Route IT Training Center <BsFillCloudArrowUpFill/>
+                        </a>
+                   </li>
                 </ul>
               </div>
             </div>
@@ -337,12 +382,12 @@ export default function About() {
              {techStack.map((e ,i)=>{
               return<>
                <div key={i+2} className="col-6 col-md-4 col-lg-3 my-4 ">
-                <div className="p-3 tech-card  rounded d-flex justify-content-around align-items-center position-relative" 
+                <div className="p-3 tech-card  rounded d-flex justify-content-around align-items-center position-relative h-100" 
                  data-aos="slide-up"
            
                  >
                  {e.isDone?"":<span className="badge bg-danger position-absolute start-0  bottom-100  m-2" >Pending</span>}
-                    <img src={e.src} className={e.name === "Next.js"? "w-25 bg-white" :"w-25"} alt={e.name} />
+                    <img src={e.src} className={e.name === "Next.js"? "w-25 bg-white rounded" :"w-25"} alt={e.name} />
                     <h6 className="mb-0">{e.name}</h6>
 
                 </div>

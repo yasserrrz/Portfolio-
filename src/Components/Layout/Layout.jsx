@@ -5,6 +5,7 @@ import Particles from 'react-particles';
 import { loadSlim } from 'tsparticles-slim';
 import Footer from '../Footer/Footer';
 import Aos from 'aos';
+import ScrollToTop from '../Utils/ScrollToTop';
 
 export default function Layout() {
   useEffect(() => {
@@ -144,6 +145,7 @@ const particlesOptions = {
           
                 
         />
+        <ScrollToTop/>
        <Outlet></Outlet>
        <Navbar/>
        <Footer></Footer>
