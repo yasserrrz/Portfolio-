@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom'
-import CV from '../../assets/Yasser_Mohamed_Resume_30-07-2023-07-37-40.pdf'
+import CV from '../../assets/Yasser-Mohamed-FlowCV-Resume-20231231.pdf'
 export default function CTA() {
   return (
   <>
