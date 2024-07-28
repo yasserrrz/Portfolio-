@@ -14,12 +14,31 @@ import Bookmarker from "../../assets/Bookmarker.png"
 import Recipes from "../../assets/Recipes.png"
 import static_portfolio_2 from "../../assets/portfolio_two.png"
 import static_portfolio_1 from "../../assets/static_portfolio_one.pn.png"
+import Mern from "../../assets/Screenshot 2024-07-28 044205.png"
+import HYPER from '../../assets/HYPER-SCADA.jpg'
 
 
 
 export default function Portfolio() {
  
   const projectsData = [
+    {
+      name:"Social Media App",
+      img: Mern,
+      gitHub:"https://github.com/yasserrrz/MERNAPP",
+      demo: "",
+      showFullText: false,
+      text: `MERN Social Media App
+A modern social media platform built with the MERN stack (MongoDB, Express, React, Node.js). This app features user profiles, content sharing, and a personalized feed, offering a seamless and engaging experience for users to connect and interact.`
+    },
+    {
+      name:"HYPER SCADA"
+      ,img: HYPER,
+      gitHub:"https://github.com/yasserrrz/hyperdemo3",
+      demo: "",
+      showFullText: false,
+      text: `Applied React.js in freelance projects, implementing CRUD operations for user-friendly data management. Developed systems enabling businesses to easily store, retrieve, and analyze data with added graphs and charts. Committed to creating simplified solutions through React.js for enhanced project outcomes.`
+    },
     {
         name:"E-commerce",
         img: Ecomerce,
