@@ -16,7 +16,7 @@ export default function Footer() {
            <li><Link to={'/contactUs'}>Contact Me </Link></li>
         </ul>  */}
         <div className="footer__socials ">
-          <a href="https://www.instagram.com/iam_yasserr/" target={`_blank`}><AiFillInstagram/></a>
+          <a href="https://www.instagram.com/yasserrrz/" target={`_blank`}><AiFillInstagram/></a>
           <a href="https://www.linkedin.com/in/yasser-mohamed-5ba73a198" target={`_blank`}><FaLinkedinIn/></a>
           <a href="https://wa.me/+201094991544" target={`_blank`}><IoLogoWhatsapp/></a>
 

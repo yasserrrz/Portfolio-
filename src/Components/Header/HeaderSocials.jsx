@@ -13,7 +13,7 @@ export default function HeaderSocials() {
         <a href="https://wa.me/+201094991544"    target={`_blank`}>
             <BsWhatsapp/>
         </a>
-        <a href="https://www.instagram.com/iam_yasserr/"   target={`_blank`}>
+        <a href="https://www.instagram.com/yasserrrz/"   target={`_blank`}>
           <BsInstagram/>
         </a>
  
