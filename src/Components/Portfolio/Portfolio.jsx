@@ -16,7 +16,7 @@ import static_portfolio_2 from "../../assets/portfolio_two.png"
 import static_portfolio_1 from "../../assets/static_portfolio_one.pn.png"
 import Mern from "../../assets/Screenshot 2024-07-28 044205.png"
 import HYPER from '../../assets/HYPER-SCADA.jpg'
-
+import { motion } from 'framer-motion';
 
 
 export default function Portfolio() {
@@ -163,8 +163,15 @@ const toggleShowText = (index) => {
 
         <div className="row g-4 ">
         {projectsData.map((e, index) => (
-        <div key={index} className="col-12 col-md-6 col-lg-4">
-          <div className="project  p-3 rounded" data-aos="slide-up" data-aos-delay={`${(index >2 ? index *50 : 100 )}`}>
+        <motion.div
+          key={index}
+          className="col-12 col-md-6 col-lg-4"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.5, delay: index * 0.08 }}
+        >
+          <div className="project  p-3 rounded">
             <div className="card-heder d-flex px-2 justify-content-between">
               <h6>{e.name}</h6>
               <div className="icn">
@@ -192,7 +199,7 @@ const toggleShowText = (index) => {
               
             </div>
           </div>
-        </div>
+        </motion.div>
       ))}
         </div>
 
