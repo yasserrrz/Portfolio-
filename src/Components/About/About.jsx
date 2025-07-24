@@ -29,6 +29,7 @@ import mongoDb from '../../assets/mongodb-original.svg'
 import Tailwind from '../../assets/tailwind-css.svg'
 import Nodejs from '../../assets/nodejs.svg'
 import {BsFillCloudArrowUpFill} from'react-icons/bs'
+import { Helmet } from 'react-helmet-async';
 
 export default function About() {
   const [activeTab, setActiveTab] = useState("Section1"); // Set the initial active tab
@@ -160,6 +161,19 @@ export default function About() {
   },[])
   return (
     <>
+      <Helmet>
+        <title>About Yasser Mohamed | Front-End Developer Portfolio</title>
+        <meta name="description" content="Yasser Mohamed is a dedicated Front-End Developer specializing in React.js, Next.js, and modern web technologies. Explore professional experience, tech stack, and projects." />
+        <meta property="og:title" content="About Yasser Mohamed | Front-End Developer Portfolio" />
+        <meta property="og:description" content="Yasser Mohamed is a dedicated Front-End Developer specializing in React.js, Next.js, and modern web technologies. Explore professional experience, tech stack, and projects." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://your-portfolio-url.com/about" />
+        <meta property="og:image" content="https://your-portfolio-url.com/path-to-profile-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Yasser Mohamed | Front-End Developer Portfolio" />
+        <meta name="twitter:description" content="Yasser Mohamed is a dedicated Front-End Developer specializing in React.js, Next.js, and modern web technologies. Explore professional experience, tech stack, and projects." />
+        <meta name="twitter:image" content="https://your-portfolio-url.com/path-to-profile-image.jpg" />
+      </Helmet>
       <div className="container about_container  position-relative" style={{zIndex:"1" }}>
         <div className="row">
           <div className="col-12 text-center mt-5">
@@ -216,7 +230,7 @@ export default function About() {
               className="  mt-5 glow-on-hover p-3 text-decoration-none "
               style={{ marginBottom: "7rem" }}
             >
-              Let's Talk
+              Let&apos;s Talk
             </Link>
           </div>
         </div>
@@ -288,53 +302,40 @@ export default function About() {
               <div
                 className={activeTab === "Section2" ? "d-block " : "d-none"}
                 id="Section2"
-          
                 >
-              
-                <h3>Experiences</h3>
-                 
-                  <h6 className="px-3">
-                    Front-End Developer at bedab Software | May 2023 | Cairo,
-                    Egypt.
-                  </h6>
-                  <p className="px-2 px-md-5">
-                  Contributed to projects involving static websites,
-                    React.js, and MVC architecture, showcasing proficiency in
-                    frontend development.
-                  </p>
-                  <h6 className="px-3">
-                    Front-End Development Diploma,At Route Academy December 2022
-                    – April 2023 Cairo,Egypt
-                  </h6>
-                <p className="px-2 px-md-5">
-                  Intensive training in HTML, CSS, JavaScript, and responsive
-                  web design. Specialized in React.js and Redux for building
-                  interactive user interfaces. Hands-on experience in creating
-                  responsive and user-friendly websites. Proficient in
-                  translating design mock-ups into functional web pages. Stayed
-                  updated with the latest front-end development trends.
-                </p>
-                  <h6 className="px-3">Back-End Development Diploma,At Route Academy Aug 2023
-                    – Jan 2024 Cairo,Egypt</h6>
-                  <p className="px-2 px-md-5">
-                  Intensive training in Node.js, Express.js, MongoDB, SQL,
-                  and RESTful APIs. Specialized in building server-side
-                  applications using Node.js and Express.js, proficient in
-                  handling database operations using MongoDB and SQL.
-                  Experienced in creating RESTful APIs and handling HTTP
-                  requests and responses. Stayed updated with the latest
-                  back-end development trends.
-                  </p>
-                  <h6 className="px-3">Freelance Web Developer - Working as a freelancer on web development</h6>
-                  <p className="px-2 px-md-5">
-                  Currently offering my services as a freelance web developer,
-                  specializing in frontend development and full stack web
-                  development. Proficient in HTML, CSS, JavaScript, React.js,
-                  Node.js, Express.js, MongoDB, and SQL. Capable of
-                  collaborating with clients to understand their requirements
-                  and deliver high-quality web solutions.
-                  </p>
-
+                <h3>Professional Experience</h3>
+                <h6 className="px-3">Front-End Developer, Unique Destination Travel Network (UDTN) <span className="text-muted-white">Mar 2025 – Present, Cairo, Egypt</span></h6>
+                <ul className="px-2 px-md-5">
+                  <li>Developing responsive and scalable front-end applications using modern frameworks (Next.js, React, etc.).</li>
+                  <li>Collaborating with back-end developers and designers to create seamless user experiences.</li>
+                  <li>Working on multiple systems including booking management, supplier dashboards, and customer-facing portals.</li>
+                </ul>
+                <h6 className="px-3">Front-End Developer, تجارة - Tjaara <span className="text-muted-white">Aug 2024 – Mar 2025, Cairo, Egypt</span></h6>
+                <ul className="px-2 px-md-5">
+                  <li>Delivered responsive and high-performance user interfaces for dashboards, e-commerce platforms, and websites tailored to the Saudi market.</li>
+                  <li>Developed and optimized web applications using React and Next.js to enhance user experience and business functionality.</li>
+                  <li>Collaborated with cross-functional teams on project planning, UI/UX enhancement, and code quality assurance.</li>
+                  <li>Contributed to the growth and scalability of Tjaara’s digital products by creating user-centered, maintainable, and efficient solutions.</li>
+                </ul>
+                <h6 className="px-3">Front-End Developer, X-event (freelance) <span className="text-muted-white">Apr 2024 – Nov 2024</span></h6>
+                <ul className="px-2 px-md-5">
+                  <li>Developed an advanced Event Management System to streamline event creation, publication, and management, featuring customizable agendas and media upload capabilities.</li>
+                  <li>Implemented seamless event search, ticketing, and payment processing, with secure financial management through integrated bank accounts and wallets.</li>
+                  <li>Designed role-based access control, supporting admins, owners, and speakers with tailored permissions for efficient event coordination.</li>
+                  <li>Enhanced user experience with real-time notifications, dynamic seating charts, and customizable attendee certifications.</li>
+                </ul>
+                <h6 className="px-3">Front-End Developer, TB3arbi (freelance) <span className="text-muted-white">Oct 2023 – Nov 2023</span></h6>
+                <ul className="px-2 px-md-5">
+                  <li>Led the front-end development for a travel event planning platform using Next.js.</li>
+                  <li>Ensured a seamless user experience by designing and implementing user-friendly interfaces.</li>
+                  <li>Worked closely with the backend team to optimize performance and ensure the successful delivery of the project.</li>
+                </ul>
+                <h6 className="px-3">Front-End Developer, HYPER SCADA (freelance) <span className="text-muted-white">Dec 2023 – Feb 2024</span></h6>
+                <ul className="px-2 px-md-5">
+                  <li>Developed and maintained user-friendly web applications using React.js, focusing on CRUD operations for efficient data management.</li>
+                  <li>Created intuitive data visualization tools, including graphs and charts, to help businesses analyze and interpret their data.</li>
+                  <li>Delivered clean, maintainable code, and adhered to best practices to improve the scalability and reliability of freelance project.</li>
+                </ul>
               </div>
               <div
                 className={activeTab === "Section3" ? "d-block " : "d-none"}

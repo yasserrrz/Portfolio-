@@ -58,7 +58,10 @@ transform: rotate(0);
 
 
 
-
+.text-muted-white{
+    font-size: 0.8rem;
+    color: #a8a8a8;
+}
 
 
 a:hover,
