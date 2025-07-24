@@ -13,7 +13,7 @@ export default function Header() {
      
       <header >
         <div className=" container header_container text-center mb-5 h-100 position-relative">
-          <h5>Hello I'm</h5>
+          <h5>Hello I&apos;m</h5>
           <h1 className="animate__animated animate__bounceInLeft fade-left">Yasser Mohamed</h1>
           <h5 className="text-light"> <Typewriter words = { {}}></Typewriter> </h5>
           <CTA></CTA>
