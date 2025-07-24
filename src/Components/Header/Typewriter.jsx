@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 
-export default function Typewriter({words }) {
+export default function Typewriter() {
     const [text, setText] = useState('');
     const phrases = [
       "I'm FrontEnd DeV",
