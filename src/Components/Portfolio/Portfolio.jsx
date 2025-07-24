@@ -17,6 +17,7 @@ import static_portfolio_1 from "../../assets/static_portfolio_one.pn.png"
 import Mern from "../../assets/Screenshot 2024-07-28 044205.png"
 import HYPER from '../../assets/HYPER-SCADA.jpg'
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 
 
 export default function Portfolio() {
@@ -146,6 +147,19 @@ const toggleShowText = (index) => {
 
   return (
     <>
+      <Helmet>
+        <title>Portfolio | Yasser Mohamed - Front-End Developer</title>
+        <meta name="description" content="Explore Yasser Mohamed's portfolio of web development projects, including React, Next.js, and full-stack applications." />
+        <meta property="og:title" content="Portfolio | Yasser Mohamed - Front-End Developer" />
+        <meta property="og:description" content="Explore Yasser Mohamed's portfolio of web development projects, including React, Next.js, and full-stack applications." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://yasserrsportfolio.vercel.app/portfolio" />
+        <meta property="og:image" content="https://yasserrsportfolio.vercel.app/assets/yasserNo-bg-e8a15c6f.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Portfolio | Yasser Mohamed - Front-End Developer" />
+        <meta name="twitter:description" content="Explore Yasser Mohamed's portfolio of web development projects, including React, Next.js, and full-stack applications." />
+        <meta name="twitter:image" content="https://yasserrsportfolio.vercel.app/assets/yasserNo-bg-e8a15c6f.png" />
+      </Helmet>
         
         <div className="container about_container mb-5">
         <div className="row ">

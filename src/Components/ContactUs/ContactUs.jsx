@@ -1,11 +1,12 @@
 
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import './contactUs.css'
 import {MdOutlineEmail} from 'react-icons/md'
 import {BsWhatsapp ,BsLinkedin} from 'react-icons/bs'
 import emailjs from 'emailjs-com';
 import { PuffLoader
 } from 'react-spinners'
+import { Helmet } from 'react-helmet-async';
 
 
 export default function ContactUs() {
@@ -59,7 +60,20 @@ const validateForm = () => {
   };
   
   return (
-   <>
+    <>
+      <Helmet>
+        <title>Contact | Yasser Mohamed - Front-End Developer</title>
+        <meta name="description" content="Contact Yasser Mohamed, Front-End Developer, for web development projects, collaborations, or inquiries." />
+        <meta property="og:title" content="Contact | Yasser Mohamed - Front-End Developer" />
+        <meta property="og:description" content="Contact Yasser Mohamed, Front-End Developer, for web development projects, collaborations, or inquiries." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://yasserrsportfolio.vercel.app/contactUs" />
+        <meta property="og:image" content="https://yasserrsportfolio.vercel.app/assets/yasserNo-bg-e8a15c6f.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact | Yasser Mohamed - Front-End Developer" />
+        <meta name="twitter:description" content="Contact Yasser Mohamed, Front-End Developer, for web development projects, collaborations, or inquiries." />
+        <meta name="twitter:image" content="https://yasserrsportfolio.vercel.app/assets/yasserNo-bg-e8a15c6f.png" />
+      </Helmet>
       
        
         <section id='contact' className='position-relative container  text-center py-5'>
