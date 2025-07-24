@@ -162,11 +162,11 @@ export default function About() {
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content="https://your-portfolio-url.com/about"
+          content="https://yasserrsportfolio.vercel.app/about"
         />
         <meta
           property="og:image"
-          content="https://your-portfolio-url.com/path-to-profile-image.jpg"
+          content="https://yasserrsportfolio.vercel.app/assets/yasserNo-bg-e8a15c6f.png"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
@@ -179,7 +179,7 @@ export default function About() {
         />
         <meta
           name="twitter:image"
-          content="https://your-portfolio-url.com/path-to-profile-image.jpg"
+          content="https://yasserrsportfolio.vercel.app/assets/yasserNo-bg-e8a15c6f.png"
         />
       </Helmet>
       <div
